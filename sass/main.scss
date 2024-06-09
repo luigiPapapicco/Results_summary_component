@@ -1,0 +1,20 @@
+// importe tools
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/keyframes';
+
+// import normalize
+@import 'base/base.scss';
+@import 'base/typography';
+
+// import components
+@import 'components/buttons';
+@import 'components/card';
+
+// import layout
+@import 'layout/loader';
+@import 'layout/header';
+@import 'layout/footer';
+
+// import pages
+@import 'pages/style';
