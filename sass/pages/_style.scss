@@ -1,0 +1,92 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ghostwhite;
+}
+
+#box {
+    display: flex;
+    background: $clr-White;
+    border-radius: 25px;
+}
+
+header,
+main {
+    height: 480px;
+    width: 310px;
+}
+
+header {
+    background: linear-gradient(to top, $clr-LightRoyalBlue, $clr-LightSlateBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+    border-radius: 25px;
+
+    & > h1 {
+        color: $clr-LightLavender;
+        font-size: 21px;
+    }
+
+    & > div {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, $clr-VioletBlue, $clr-PersianBlue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > p:nth-of-type(1) {
+            color: $clr-White;
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        & > p:nth-of-type(2) {
+            color: $clr-LightLavender;
+        }
+    
+    }
+
+    & > p:nth-of-type(1) {
+        color: $clr-White;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    & > p:nth-of-type(2) {
+        color: $clr-LightLavender;
+        text-align: center;
+    }
+}
+
+main {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > h2 {
+        font-size: 21px;
+        color: $clr-DarkGrayBlue;;
+    }
+
+    & > button {
+        background: $clr-DarkGrayBlue;
+        border-style: none;
+        padding: 20px 15px;
+        border-radius: 25px;
+        color: $clr-White;
+        font-weight: 700;
+    }
+
+}
+
+

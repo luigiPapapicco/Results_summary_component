@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+// fonts
+$txt-hanken: "Hanken Grotesk", sans-serif;
+
+// color
+// primary
+$clr-LightRedAlpha: hsla(0, 100%, 67%, 0.1);
+$clr-OrangeyYellowAlpha: hsla(39, 100%, 56%, 0.1);
+$clr-GreenTealAlpha: hsla(166, 100%, 37%, 0.1);
+$clr-CobaltBlueAlpha: hsla(234, 85%, 45%, 0.1);
+$clr-LightRed: hsl(0, 100%, 67%);
+$clr-OrangeyYellow: hsl(39, 100%, 56%);
+$clr-GreenTeal: hsl(166, 100%, 37%);
+$clr-CobaltBlue: hsl(234, 85%, 45%);
+
+// gradiants
+//(background)
+// $clr-LightSlateBlue: hsl(252, 100%, 67%);
+// $clr-LightRoyalBlue: rgb(46, 43, 233);
+$clr-LightSlateBlue: rgb(120, 87, 255);
+$clr-LightRoyalBlue: #2e2be9;
+//(circle)
+// $clr-VioletBlue: hsla(256, 72%, 46%, 1);
+// $clr-PersianBlue: hsla(241, 72%, 46%, 0);
+$clr-VioletBlue: #4e21ca;
+$clr-PersianBlue: hsla(241, 72%, 46%, 1);
+
+// neutral
+$clr-White: hsl(0, 0%, 100%);
+$clr-PaleBlue: hsl(221, 100%, 96%);
+$clr-LightLavender: hsl(241, 100%, 89%);
+$clr-DarkGrayBlue: hsl(224, 30%, 27%);
+
+$clr-grey: #919191;

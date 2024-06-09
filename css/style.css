@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 /* Base et init */
 *,
 *::after,
@@ -10,6 +11,7 @@
 body {
   box-sizing: border-box;
   user-select: none;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 a {
@@ -21,6 +23,146 @@ img {
   object-fit: cover;
 }
 
-/* Typographpy */
+p {
+  font-size: 1.125rem;
+}
+
+.card {
+  width: 100%;
+  padding: 15px;
+  background: rgb(151, 243, 255);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  position: relative;
+}
+.card-redA {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+.card-orangeA {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+.card-greenA {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+.card-blueA {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+.card .container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card .container_img {
+  width: 15px;
+  height: 15px;
+}
+.card .container_paragraphe {
+  margin-right: 50px;
+}
+.card .container_paragraphe-red {
+  color: hsl(0, 100%, 67%);
+}
+.card .container_paragraphe-orange {
+  color: hsl(39, 100%, 56%);
+}
+.card .container_paragraphe-green {
+  color: hsl(166, 100%, 37%);
+}
+.card .container_paragraphe-blue {
+  color: hsl(234, 85%, 45%);
+}
+.card_scoreBox {
+  display: flex;
+}
+.card_scoreBox > p:nth-of-type(1) {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+.card_scoreBox > p:nth-of-type(2) {
+  color: #919191;
+  font-weight: 700;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ghostwhite;
+}
+
+#box {
+  display: flex;
+  background: hsl(0, 0%, 100%);
+  border-radius: 25px;
+}
+
+header,
+main {
+  height: 480px;
+  width: 310px;
+}
+
+header {
+  background: linear-gradient(to top, #2e2be9, rgb(120, 87, 255));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
+  border-radius: 25px;
+}
+header > h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 21px;
+}
+header > div {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #4e21ca, hsl(241, 72%, 46%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > div > p:nth-of-type(1) {
+  color: hsl(0, 0%, 100%);
+  font-size: 60px;
+  font-weight: 700;
+}
+header > div > p:nth-of-type(2) {
+  color: hsl(241, 100%, 89%);
+}
+header > p:nth-of-type(1) {
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  font-weight: 500;
+}
+header > p:nth-of-type(2) {
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+}
+
+main {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main > h2 {
+  font-size: 21px;
+  color: hsl(224, 30%, 27%);
+}
+main > button {
+  background: hsl(224, 30%, 27%);
+  border-style: none;
+  padding: 20px 15px;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=style.css.map */

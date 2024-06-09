@@ -10,6 +10,7 @@
 body {
     box-sizing: border-box;
     user-select: none;
+    font-family: $txt-hanken;
 }
 
 a {
@@ -19,4 +20,8 @@ a {
 
 img {
     object-fit: cover;
+}
+
+p {
+    font-size: 1.125rem;
 }

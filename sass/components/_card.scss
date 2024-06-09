@@ -1,0 +1,64 @@
+.card {
+    width: 100%;
+    padding: 15px;
+    background: rgb(151, 243, 255);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+    
+    &-redA {
+        background: $clr-LightRedAlpha;
+    }
+    &-orangeA {
+        background: $clr-OrangeyYellowAlpha;
+    }
+    &-greenA {
+        background: $clr-GreenTealAlpha;
+    }
+    &-blueA {
+        background: $clr-CobaltBlueAlpha;
+    }
+    
+    .container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &_img {
+            width: 15px;
+            height: 15px;
+        }
+
+        &_paragraphe {
+            margin-right: 50px;
+
+            &-red {
+                color: $clr-LightRed;
+            }
+            &-orange {
+                color: $clr-OrangeyYellow;
+            }
+            &-green {
+                color: $clr-GreenTeal;
+            }
+            &-blue {
+                color: $clr-CobaltBlue;
+            }   
+        }
+    }
+    
+    &_scoreBox {
+        display: flex;
+
+        & > p:nth-of-type(1) {
+            color: $clr-DarkGrayBlue;
+            font-weight: 700;
+        }
+
+        & > p:nth-of-type(2) {
+            color: $clr-grey;
+            font-weight: 700;
+        }
+    }
+}
