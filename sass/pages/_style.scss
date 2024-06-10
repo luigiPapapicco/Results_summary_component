@@ -1,5 +1,5 @@
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -9,14 +9,25 @@ body {
 
 #box {
     display: flex;
+    flex-direction: row;
     background: $clr-White;
     border-radius: 25px;
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+        height: 100%;
+    }
 }
 
 header,
 main {
-    height: 480px;
+    height: 500px;
     width: 310px;
+
+    @media (max-width: 375px) {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 header {
@@ -28,6 +39,15 @@ header {
     padding: 50px 30px;
     border-radius: 25px;
 
+    @media (max-width: 375px) {
+        height: 380px;
+        border-radius: 0 0 25px 25px;
+        padding: 30px;
+        height: 100%;
+        gap: 15px;
+    }
+
+
     & > h1 {
         color: $clr-LightLavender;
         font-size: 21px;
@@ -37,16 +57,25 @@ header {
         width: 160px;
         height: 160px;
         border-radius: 50%;
-        background: linear-gradient(to bottom, $clr-VioletBlue, $clr-PersianBlue);
+        background: linear-gradient(to top, $clr-PersianBlue, $clr-VioletBlue);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
+        @media (max-width: 375px) {
+            width: 120px;
+            height: 120px;
+        }
+
         & > p:nth-of-type(1) {
             color: $clr-White;
             font-size: 60px;
             font-weight: 700;
+
+            @media (max-width: 375px) {
+                font-size: 50px;
+            }
         }
 
         & > p:nth-of-type(2) {
@@ -59,11 +88,19 @@ header {
         color: $clr-White;
         font-size: 30px;
         font-weight: 500;
+
+        @media (max-width: 375px) {
+            font-size: 1.375rem;
+        }
     }
 
     & > p:nth-of-type(2) {
         color: $clr-LightLavender;
         text-align: center;
+
+        @media (max-width: 375px) {
+            font-size: 1.0625rem;
+        }
     }
 }
 
@@ -72,6 +109,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 375px) {
+        padding: 30px;
+        gap: 20px;
+    }
 
     & > h2 {
         font-size: 21px;
@@ -85,6 +127,11 @@ main {
         border-radius: 25px;
         color: $clr-White;
         font-weight: 700;
+        cursor: pointer;
+        transition: background 400ms ease-in-out;
+        &:hover {
+            background: $clr-LightRoyalBlue;
+        }
     }
 
 }

@@ -35,18 +35,23 @@ p {
   justify-content: space-between;
   border-radius: 10px;
   position: relative;
+  margin-bottom: 15px;
 }
 .card-redA {
   background: hsla(0, 100%, 67%, 0.1);
+  box-shadow: 0px 0px 0px 0.01px hsl(0, 100%, 67%);
 }
 .card-orangeA {
   background: hsla(39, 100%, 56%, 0.1);
+  box-shadow: 0px 0px 0px 0.01px hsl(39, 100%, 56%);
 }
 .card-greenA {
   background: hsla(166, 100%, 37%, 0.1);
+  box-shadow: 0px 0px 0px 0.01px hsl(166, 100%, 37%);
 }
 .card-blueA {
   background: hsla(234, 85%, 45%, 0.1);
+  box-shadow: 0px 0px 0px 0.01px hsl(234, 85%, 45%);
 }
 .card .container {
   display: flex;
@@ -85,7 +90,7 @@ p {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -95,14 +100,28 @@ body {
 
 #box {
   display: flex;
+  flex-direction: row;
   background: hsl(0, 0%, 100%);
   border-radius: 25px;
+}
+@media (max-width: 425px) {
+  #box {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 header,
 main {
-  height: 480px;
+  height: 500px;
   width: 310px;
+}
+@media (max-width: 375px) {
+  header,
+  main {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 header {
@@ -114,6 +133,15 @@ header {
   padding: 50px 30px;
   border-radius: 25px;
 }
+@media (max-width: 375px) {
+  header {
+    height: 380px;
+    border-radius: 0 0 25px 25px;
+    padding: 30px;
+    height: 100%;
+    gap: 15px;
+  }
+}
 header > h1 {
   color: hsl(241, 100%, 89%);
   font-size: 21px;
@@ -122,16 +150,27 @@ header > div {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #4e21ca, hsl(241, 72%, 46%));
+  background: linear-gradient(to top, rgba(36, 33, 201, 0), #4e21ca);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 375px) {
+  header > div {
+    width: 120px;
+    height: 120px;
+  }
+}
 header > div > p:nth-of-type(1) {
   color: hsl(0, 0%, 100%);
   font-size: 60px;
   font-weight: 700;
+}
+@media (max-width: 375px) {
+  header > div > p:nth-of-type(1) {
+    font-size: 50px;
+  }
 }
 header > div > p:nth-of-type(2) {
   color: hsl(241, 100%, 89%);
@@ -141,9 +180,19 @@ header > p:nth-of-type(1) {
   font-size: 30px;
   font-weight: 500;
 }
+@media (max-width: 375px) {
+  header > p:nth-of-type(1) {
+    font-size: 1.375rem;
+  }
+}
 header > p:nth-of-type(2) {
   color: hsl(241, 100%, 89%);
   text-align: center;
+}
+@media (max-width: 375px) {
+  header > p:nth-of-type(2) {
+    font-size: 1.0625rem;
+  }
 }
 
 main {
@@ -151,6 +200,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 375px) {
+  main {
+    padding: 30px;
+    gap: 20px;
+  }
 }
 main > h2 {
   font-size: 21px;
@@ -163,6 +218,11 @@ main > button {
   border-radius: 25px;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
+  cursor: pointer;
+  transition: background 400ms ease-in-out;
+}
+main > button:hover {
+  background: #2e2be9;
 }
 
 /*# sourceMappingURL=style.css.map */

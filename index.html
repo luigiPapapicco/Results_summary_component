@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <title>Frontend Mentor | Results summary component</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="scripts/script.js" defer></script>
   </head>
 
   <body>
@@ -13,7 +14,7 @@
       <header>
         <h1>Your Result</h1>
         <div id="result">
-          <p id="score">76</p>
+          <p id="score"></p>
           <p id="total">of 100</p>
         </div>
         <p>Great</p>
@@ -21,47 +22,49 @@
       </header>
       <main>
         <h2>Summary</h2>
-        <div class="card card-redA">
-          <div class="container">
-            <img class="container_img" src="assets/images/icon-reaction.svg" alt="pensez au alt">
-            <p class="container_paragraphe-red">Reaction</p>
+        <div>
+          <div class="card card-redA">
+            <div class="container element1">
+              <img class="container_img" src="" alt="">
+              <p class="container_paragraphe-red"></p>
+            </div>
+            <div class="card_scoreBox">
+              <p></p>
+              <p>&nbsp;/&nbsp;100</p>
+            </div>
           </div>
-          <div class="card_scoreBox">
-            <p>80</p>
-            <p>&nbsp;/&nbsp;100</p>
+    
+          <div class="card card-orangeA">
+            <div class="container element2">
+              <img class="container_img" src="" alt="">
+              <p class="container_paragraphe-orange"></p>
+            </div>
+            <div class="card_scoreBox">
+              <p></p>
+              <p>&nbsp;/&nbsp;100</p>
+            </div>
           </div>
-        </div>
-  
-        <div class="card card-orangeA">
-          <div class="container">
-            <img class="container_img" src="assets/images/icon-memory.svg" alt="pensez au alt">
-            <p class="container_paragraphe-orange">Memory</p>
+    
+          <div class="card card-greenA">
+            <div class="container element3">
+              <img class="container_img" src="" alt="">
+              <p class="container_paragraphe-green"></p>
+            </div>
+            <div class="card_scoreBox">
+              <p></p>
+              <p>&nbsp;/&nbsp;100</p>
+            </div>
           </div>
-          <div class="card_scoreBox">
-            <p>92</p>
-            <p>&nbsp;/&nbsp;100</p>
-          </div>
-        </div>
-  
-        <div class="card card-greenA">
-          <div class="container">
-            <img class="container_img" src="assets/images/icon-verbal.svg" alt="pensez au alt">
-            <p class="container_paragraphe-green">Verbal</p>
-          </div>
-          <div class="card_scoreBox">
-            <p>61</p>
-            <p>&nbsp;/&nbsp;100</p>
-          </div>
-        </div>
-  
-        <div class="card card-blueA">
-          <div class="container">
-            <img class="container_img" src="assets/images/icon-visual.svg" alt="pensez au alt">
-            <p class="container_paragraphe-blue">Visual</p>
-          </div>
-          <div class="card_scoreBox">
-            <p>72</p>
-            <p>&nbsp;/&nbsp;100</p>
+    
+          <div class="card card-blueA">
+            <div class="container element4">
+              <img class="container_img" src="" alt="">
+              <p class="container_paragraphe-blue"></p>
+            </div>
+            <div class="card_scoreBox">
+              <p></p>
+              <p>&nbsp;/&nbsp;100</p>
+            </div>
           </div>
         </div>
         <button>Continue</button>
@@ -72,6 +75,6 @@
 
 
 <!-- <div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Challenge by <a href="https://www.frontendmentor.ioref=challenge" target="_blank">Frontend Mentor</a>. 
   Coded by <a href="#">Your Name Here</a>.
 </div> -->
