@@ -1,7 +1,7 @@
 // Attendre que le DOM soit complètement chargé avant d'exécuter le script
 try {
     // Envoyer une requête pour récupérer le fichier JSON
-    const response = await fetch("../data.json");
+    const response = await fetch("data.json");
     // Convertir la réponse en un objet JavaScript
     const datas = await response.json();
 
