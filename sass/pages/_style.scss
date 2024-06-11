@@ -135,12 +135,28 @@ main {
         color: $clr-White;
         font-weight: 700;
         cursor: pointer;
-        transition: background 400ms ease-in-out;
+        position: relative;
+        z-index: 1;
+
         &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
             background: $clr-LightRoyalBlue;
+            border-radius: 25px;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
         }
     }
-
 }
 
 
