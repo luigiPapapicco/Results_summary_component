@@ -16,11 +16,10 @@ body {
     display: flex;
     flex-direction: row;
     background: $clr-White;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
 
     @media (max-width: 620px) {
         flex-direction: column;
-        // height: 100%;
         border-radius: 0;
     }
 }
@@ -44,20 +43,20 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 30px;
-    border-radius: 25px;
+    padding: 3.125rem 1.875rem;
+    border-radius: 1.5625rem;
 
     @media (max-width: 620px) {
         width: 100%;
-        border-radius: 0 0 25px 25px;
+        border-radius: 0 0 1.5625rem 1.5625rem;
         height: 380px;
-        padding: 30px;
-        gap: 15px;
+        padding: 1.875rem;
+        gap: .9375rem;
     }
 
     & > h1 {
         color: $clr-LightLavender;
-        font-size: 21px;
+        font-size: 1.3125rem;
     }
 
     & > div {
@@ -77,11 +76,11 @@ header {
 
         & > p:nth-of-type(1) {
             color: $clr-White;
-            font-size: 60px;
+            font-size: 3.75rem;
             font-weight: 700;
 
             @media (max-width: 375px) {
-                font-size: 50px;
+                font-size: 3.125rem;
             }
         }
 
@@ -93,7 +92,7 @@ header {
 
     & > p:nth-of-type(1) {
         color: $clr-White;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 500;
 
         @media (max-width: 375px) {
@@ -112,25 +111,25 @@ header {
 }
 
 main {
-    padding: 50px 30px;
+    padding: 3.125rem 1.875rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @media (max-width: 620px) {
         width: 100%;
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     & > h2 {
-        font-size: 21px;
+        font-size: 1.3125rem;
         color: $clr-DarkGrayBlue;;
     }
 
     & > button {
         background: $clr-DarkGrayBlue;
         border-style: none;
-        padding: 20px 15px;
+        padding: 1.25rem .9375rem;
         border-radius: 25px;
         color: $clr-White;
         font-weight: 700;
@@ -152,7 +151,7 @@ main {
             right: 0;
             z-index: -1;
             background: $clr-LightRoyalBlue;
-            border-radius: 25px;
+            border-radius: 1.5625rem;
             opacity: 0;
             transition: opacity 300ms ease-in-out;
         }

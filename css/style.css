@@ -29,41 +29,41 @@ p {
 
 .card {
   width: 100%;
-  padding: 15px;
+  padding: 0.9375rem;
   background: rgb(151, 243, 255);
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .card-redA {
   background: hsla(0, 100%, 67%, 0.1);
-  box-shadow: 0px 0px 0px 0.01px hsl(0, 100%, 67%);
+  box-shadow: 0rem 0rem 0rem 0.0006rem hsl(0, 100%, 67%);
 }
 .card-orangeA {
   background: hsla(39, 100%, 56%, 0.1);
-  box-shadow: 0px 0px 0px 0.01px hsl(39, 100%, 56%);
+  box-shadow: 0rem 0rem 0rem 0.0006rem hsl(39, 100%, 56%);
 }
 .card-greenA {
   background: hsla(166, 100%, 37%, 0.1);
-  box-shadow: 0px 0px 0px 0.01px hsl(166, 100%, 37%);
+  box-shadow: 0rem 0rem 0rem 0.0006rem hsl(166, 100%, 37%);
 }
 .card-blueA {
   background: hsla(234, 85%, 45%, 0.1);
-  box-shadow: 0px 0px 0px 0.01px hsl(234, 85%, 45%);
+  box-shadow: 0rem 0rem 0rem 0.0006rem hsl(234, 85%, 45%);
 }
 .card .container {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
 }
 .card .container_img {
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
 }
 .card .container_paragraphe {
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
 .card .container_paragraphe-red {
   color: hsl(0, 100%, 67%);
@@ -108,7 +108,7 @@ body {
   display: flex;
   flex-direction: row;
   background: hsl(0, 0%, 100%);
-  border-radius: 25px;
+  border-radius: 1.5625rem;
 }
 @media (max-width: 620px) {
   #box {
@@ -136,21 +136,21 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 30px;
-  border-radius: 25px;
+  padding: 3.125rem 1.875rem;
+  border-radius: 1.5625rem;
 }
 @media (max-width: 620px) {
   header {
     width: 100%;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 1.5625rem 1.5625rem;
     height: 380px;
-    padding: 30px;
-    gap: 15px;
+    padding: 1.875rem;
+    gap: 0.9375rem;
   }
 }
 header > h1 {
   color: hsl(241, 100%, 89%);
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 header > div {
   width: 160px;
@@ -170,12 +170,12 @@ header > div {
 }
 header > div > p:nth-of-type(1) {
   color: hsl(0, 0%, 100%);
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 700;
 }
 @media (max-width: 375px) {
   header > div > p:nth-of-type(1) {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 header > div > p:nth-of-type(2) {
@@ -183,7 +183,7 @@ header > div > p:nth-of-type(2) {
 }
 header > p:nth-of-type(1) {
   color: hsl(0, 0%, 100%);
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 500;
 }
 @media (max-width: 375px) {
@@ -202,7 +202,7 @@ header > p:nth-of-type(2) {
 }
 
 main {
-  padding: 50px 30px;
+  padding: 3.125rem 1.875rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -210,17 +210,17 @@ main {
 @media (max-width: 620px) {
   main {
     width: 100%;
-    padding: 30px;
+    padding: 1.875rem;
   }
 }
 main > h2 {
-  font-size: 21px;
+  font-size: 1.3125rem;
   color: hsl(224, 30%, 27%);
 }
 main > button {
   background: hsl(224, 30%, 27%);
   border-style: none;
-  padding: 20px 15px;
+  padding: 1.25rem 0.9375rem;
   border-radius: 25px;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
@@ -240,7 +240,7 @@ main > button::after {
   right: 0;
   z-index: -1;
   background: #2e2be9;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }

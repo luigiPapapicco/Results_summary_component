@@ -1,41 +1,41 @@
 .card {
     width: 100%;
-    padding: 15px;
+    padding: .9375rem;
     background: rgb(151, 243, 255);
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: .625rem;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: .9375rem;
     &-redA {
         background: $clr-LightRedAlpha;
-        box-shadow: 0px 0px 0px 0.01px $clr-LightRed;
+        box-shadow: 0rem 0rem 0rem .0006rem $clr-LightRed;
     }
     &-orangeA {
         background: $clr-OrangeyYellowAlpha;
-        box-shadow: 0px 0px 0px 0.01px $clr-OrangeyYellow;
+        box-shadow: 0rem 0rem 0rem .0006rem $clr-OrangeyYellow;
     }
     &-greenA {
         background: $clr-GreenTealAlpha;
-        box-shadow: 0px 0px 0px 0.01px $clr-GreenTeal;
+        box-shadow: 0rem 0rem 0rem .0006rem $clr-GreenTeal;
     }
     &-blueA {
         background: $clr-CobaltBlueAlpha;
-        box-shadow: 0px 0px 0px 0.01px $clr-CobaltBlue;
+        box-shadow: 0rem 0rem 0rem .0006rem $clr-CobaltBlue;
     }
     
     .container {
         display: flex;
-        gap: 10px;
+        gap: .625rem;
         align-items: center;
 
         &_img {
-            width: 15px;
-            height: 15px;
+            width: .9375rem;
+            height: .9375rem;
         }
 
         &_paragraphe {
-            margin-right: 50px;
+            margin-right: 3.125rem;
 
             &-red {
                 color: $clr-LightRed;
